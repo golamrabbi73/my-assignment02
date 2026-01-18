@@ -23,7 +23,7 @@
 .btn{
     padding: 12px 16px;
     border: none;
-    border-radius: 1000px;
+    border-radius: 10000px;
     background: linear-gradient(20deg, #F7E93F 20%, #FB09B4 51%, #9100F8 100%);
     color: white;
     font-size: 1rem;
@@ -66,6 +66,103 @@
     display: none;
 }
 
+/* hero-section start */
+#hero-section{
+    max-width: 1600px;
+    background: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 760px;
+}
+ .hero-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+ }
+
+ .hero-image{
+    max-width: 550px;
+    height: 450px;
+    position: relative;
+ }
+
+ .circle-image{
+    position: absolute;
+    top: 0%;
+    transform: translate(-50%, 30%);
+ }
+ .circle-image img{
+    max-width: 350px;
+ }
+
+ .primary-image{
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, 50%);
+ }
+
+ .badge{
+    position: absolute;
+    top: 26%;
+    left: 44px;
+    transform: translate(50%, 50%);
+ }
+
+ .badge span{
+    background-color: #00FF88;
+    border-radius: 1000px;
+    padding: 8px 16px;
+    color: #1A0B2E;
+    font-weight: 600;
+    font-size: 1.125rem;
+ }
+ .hero-content{
+    text-align: center;
+ }
+
+ .hero-content h1{
+    color: white;
+    font-size: 3.75rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+ }
+
+  .hero-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.hero-button{
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-btn{
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.subscribe-btn{
+    border-radius: 10000px;
+    background-color: transparent;
+    padding: 8px 12px;
+    border: 1px solid #00FF88;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-btn span{
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 /* Mobile design */
 @media screen and (max-width:576px) {
     .navbar{
@@ -92,4 +189,13 @@
     .menu-icon img{
         width: 24px;
     }
+
+    .music-btn{
+        display: block;
+    }
+
+    .hero-image{
+        
+    }
+
 }
