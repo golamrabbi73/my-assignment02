@@ -229,6 +229,75 @@
     font-weight: 400;
 }
 
+#features-section{
+    max-width: 1600px;
+    background-color: #230E3D;
+}
+
+.features-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.features-container h2{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.features{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.features-card-1{
+    grid-column: span 1;
+    grid-row: span 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.features-card-2, .features-card-3{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.features-card-4{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.features-card-5{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.f-card{
+    padding: 40px;
+    box-shadow: rgba(53, 17, 101, 0.4) 0px 48px 100px 0px;
+    border-radius: 40px;
+    background-color: #2b124e;
+    /* margin: auto 0; */
+}
+
+.f-card h4{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    margin: 16px 0;
+}
+
+.f-card p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
 /* Mobile design */
 @media screen and (max-width:576px) {
     .navbar{
@@ -258,6 +327,21 @@
 
     .music-btn{
         display: block;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 16px;
+        margin: 40px;
+    }
+
+    .f-card{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .f-card h4{
+        font-size: 2rem;
     }
 
 }
