@@ -350,7 +350,7 @@
 }
 
 .card-info{
-    margin: 24px;
+    padding: 24px;
 }
 
 .video-card .video-duration{
@@ -537,12 +537,19 @@ footer{
         font-size: 2.5rem;
     }
 
+    .features-container{
+        padding: 40px 0;
+    }
+
+    .features-container h2{
+        font-size: 2rem;
+    }
 
     .features {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         gap: 16px;
-        margin: 40px;
+        margin: 16px 20px 0;
     }
 
     .f-card{
@@ -551,6 +558,61 @@ footer{
     }
     .f-card h4{
         font-size: 2rem;
+    }
+
+    .podcast-container{
+        padding: 40px 0;
+        margin: 0 20px;
+    }
+
+    .podcast-container h4{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .postcast-videos{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .video-card{
+        width: 100%;
+    }
+
+    .video-card h5{
+        font-size: 1.25rem;
+    }
+
+    .card-info{
+    padding: 16px;
+    }
+
+    .host{
+        /* margin-top: 60px; */
+        margin: 60px auto 0;
+    }
+
+    .host-info{
+        flex-direction: column;
+    }
+
+    .host-image{
+        margin: 24px auto 0;
+    }
+
+    .info-text{
+        align-items: center;
+        justify-content: center;
+        margin: 0 24px 24px 24px;
+    }
+
+    .info-text h5{
+        font-size: 1.5rem;
+    }
+
+    .info-text p{
+        text-align: center;
+        opacity: 60%;
     }
 
 }
