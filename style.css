@@ -206,12 +206,14 @@
     max-width: 1200px;
     margin: 80px auto 120px;
     gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
 }
 
 .card{
     width: 240px;
+    height: 95px;
     text-align: center;
 
 }
@@ -402,7 +404,7 @@
 
 .info-text .social-links{
     justify-content: flex-start;
-    gap: 8px;
+    gap: 10px;
 }
 
 .social-links li{
@@ -413,10 +415,70 @@
     text-decoration: none;
 }
 
+.social-links li a img{
+    
+}
+
 .card-info span{
     color: #00FF88;
 }
 
+/* footer section style */
+footer{
+    max-width: 1600px;
+    height: 412px;
+    background: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+
+}
+
+.footer-container{
+    max-width: 1360px;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer-image{
+    margin-top: 135px;
+    max-width: 410px;
+}
+
+.footer-menu{
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu li{
+    list-style: none;
+}
+
+.footer-menu li a{
+    text-decoration: none;
+}
+
+.footer-menu li a span{
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    opacity: 60%;
+}
+
+.menu-links{
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-text{
+    color: #FAFAFA;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 60%;
+}
 
 /* Mobile design */
 @media screen and (max-width:576px) {
@@ -448,6 +510,33 @@
     .music-btn{
         display: block;
     }
+
+    #about-section .about-info{
+        margin: 40px 20px;
+    }
+
+    .about-info h2{
+        font-size: 2rem;
+    }
+
+    #horizontal-line{
+        width: 90%;
+    }
+
+    #about-section .about-cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: 40px auto;
+    }
+
+    .about-cards .card{
+        width: 100%;
+    }
+
+    .card h2{
+        font-size: 2.5rem;
+    }
+
 
     .features {
         grid-template-columns: 1fr;
