@@ -720,7 +720,8 @@ footer{
     footer {
         background-position: center;
         background-size: cover;
-        height: 220px;
+        height: 250px;
+        padding-bottom: 50px;
     }
 
     .footer-container{
