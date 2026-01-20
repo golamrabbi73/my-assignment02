@@ -117,7 +117,8 @@
     position: absolute;
     top: 26%;
     left: 44px;
-    animation: shake 3s ease-in-out 1s infinite;
+    cursor: pointer;
+    animation: shake 1.5s ease-in-out 1s infinite;
 }
 
 .badge span{
@@ -174,12 +175,55 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    width: 144px;
+    height: 41px;
 }
 
 .subscribe-btn span{
     color: #00FF88;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.button-box{
+    width: 147px;
+    height: 44px;
+    border-radius: 10000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-box::before{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, #DD0303, #FFE52A, #73C8D2, #FFF0DD);
+    animation: rotation 5s linear infinite;
+}
+
+.button-box::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #111;
+    border-radius: 20px;
+}
+
+.button-box .subscribe-btn{
+    position: relative;
+    z-index: 1;
+}
+
+
+@keyframes rotation{
+    from { transform: rotate(0deg);}
+    
+    to { transform: rotate(360deg);}
 }
 
 /* about section start */
@@ -421,13 +465,20 @@
 .info-text .social-links{
     justify-content: flex-start;
     gap: 10px;
+    align-items: center;
 }
 
-.social-links li{
-    list-style: none;
+.social-links .link-box{
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(117, 114, 114, 0.562);
+    border-radius: 50%;
 }
 
-.social-links li a{
+.social-links .link-box a{
     text-decoration: none;
 }
 
